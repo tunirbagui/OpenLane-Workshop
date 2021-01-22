@@ -1,5 +1,5 @@
 # Advanced-Physical-Design-Workshop-Using-OpenLane-Sky130
-# Advanced OpenLANE Workshop
+
 
 <!-- PROJECT LOGO -->
 <br />
