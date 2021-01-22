@@ -12,9 +12,9 @@
 
 
 <!-- TABLE OF CONTENTS -->
-##Table of Contents
+## Table of Contents
 ---
-- [About The Project](#introduction-to-openlane-and-sky130-pdk)
+- [About The Project](#about-the-project)
 
 
 
