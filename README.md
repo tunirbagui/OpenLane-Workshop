@@ -38,7 +38,7 @@ From conception to product, the ASIC design flow is an iterative process that is
 
 <p align="center">
 
-  ![](/images/asic_flow.png)
+  ![](/images/asic_flow.jpg)
 
   1. **Architectural Design** – A system engineer will provide the VLSI engineer with specifications for the system that are determined through physical constraints. The VLSI engineer will be required to design a circuit that meets these constraints at a microarchitecture modeling level.
 
