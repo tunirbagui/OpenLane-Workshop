@@ -1,4 +1,4 @@
-# Advanced-Physical-Design-Workshop-Using-OpenLane-Sky130
+# Advanced-Physical-Design-Using-OpenLane-Sky130
 
 
 <!-- PROJECT LOGO -->
@@ -11,8 +11,10 @@
 </p>
 
 
-
-This repository contains all the information included in the Advanced Physics Design Using OpenLANE / Sky 130 workshop. This workshop helped me in learning ASIC implementation steps from RTL to GDSII flow using open source EDA tools and Google – Skywater 130 nm technology PDK. 
+<!-- TABLE OF CONTENTS -->
+##Table of Contents
+---
+- [About The Project](#introduction-to-openlane-and-sky130-pdk)
 
 
 
@@ -57,20 +59,6 @@ This project gives an interactive tutorial experied during the VSD Advanced Phys
 OpenLANE is an automated RTL to GDSII flow based on several components including OpenROAD, Yosys, Magic, Netgen, Fault, OpenPhySyn, SPEF-Extractor and custom methodology scripts for design exploration and optimization. It is a tool started for true open source tape-out experience and comes with APACHE version 2.0 . The goal of OpenLANE is to produce clean GDSII without any human intervention. OpenLANE is tuned for Skywater 130nm open-source PDK and can be used to produce hard macros and chips.
 
 
-<!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-  1. Ubuntu OS-based System
-  2. 25GB+ Disk Space
-
-### Installation
-
-Please refer to: https://github.com/nickson-jose/openlane_build_script for installation steps
 
 ## RTL to GDSII Introduction
 
