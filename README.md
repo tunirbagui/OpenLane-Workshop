@@ -34,7 +34,7 @@ OpenLANE is an automated RTL to GDSII flow based on several open source tools in
 
 ## RTL to GDSII Flow
 
-From conception to product, the ASIC design flow is an iterative process that is not static for every design. The details of the flow may change depending on ECO’s, IP requirements, DFT insertion, and SDC constraints, however the base concepts still remain same. The flow can be broken down into 11 steps:
+From specifications to gds, the ASIC design flow is an iterative process that is not static for every design. The details of the flow may change depending on ECO’s, IP requirements, DFT insertion, and SDC constraints, however the base concepts still remain same. The flow can be broken down into 11 steps:
 
 <p align="center">
 
@@ -78,7 +78,7 @@ Standard Cells – Standard cells are fixed height and a multiple of unit size w
   10.  **Routing** – Implements the interconnect system between standard cells using the remaining available metal layers after CTS and PDN generation. The routing is performed on routing grids to ensure minimal DRC errors.
     
 The Skywater 130nm PDK uses 6 metal layers to perform CTS, PDN generation, and interconnect routing.
-Shown below is an example of a base RTL to GDS flow in ASIC design:
+
 
 
 <!-- Workshop Introduction -->
