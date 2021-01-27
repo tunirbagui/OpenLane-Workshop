@@ -152,7 +152,7 @@ OpenLANE flow consists of several stages. By default, all flow steps are run in 
 
 ### Skywater PDK Files
 
-The Skywater PDK files we are working with are described under $PDK_ROOT. There are three subdirectories needed for the workshop:
+
 
 ![](/images/1.png)
 
