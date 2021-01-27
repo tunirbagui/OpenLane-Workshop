@@ -154,7 +154,7 @@ OpenLANE flow consists of several stages. By default, all flow steps are run in 
 
 
 
-![](/images/1.png)
+![](/images/pdk.png)
 
   1. Skywater-pdk – Contains all the foundry provided PDK related files
   2. Open_pdks – Contains scripts that are used to bridge the gap between closed-source and open-source PDK to EDA tool compatibility
@@ -162,7 +162,7 @@ OpenLANE flow consists of several stages. By default, all flow steps are run in 
 
 ### Invoking OpenLane
 
-![](/images/2.png)
+![](/images/invoke_openlane.png)
 
   - ./flow.tcl is the script which runs the OpenLANE flow
   - OpenLANE can be run interactively or in autonomous mode 
@@ -171,7 +171,7 @@ OpenLANE flow consists of several stages. By default, all flow steps are run in 
 ### Package Importing
 Different software dependencies are needed to run OpenLANE. To import these into the OpenLANE tool we need to run:
 
-![](/images/3.png)
+![](/images/package_require.png)
 
 ### Design Folder
 All designs run within OpenLANE are extracted from the openlane/designs folder:
@@ -188,7 +188,7 @@ Each design hierarchy comes with two distinct components:
 
 An example of a configuration file is given:
 
-  ![](/images/6.png)
+  ![](/images/Config_tcl.png)
 
 ### Prepare Design
 Prep is used to make file structure for our design. To set this up do:
@@ -209,7 +209,7 @@ In addition, preparing the design in OpenLANE merges the technology LEF and cell
 
 To run synthesis:
 
-  ![](/images/10.png)
+  ![](/images/synthesis.png)
 
 Note: Ensure the WNS is an acceptable number, if not please adjust the clock period to fix STA errors.
 
@@ -250,11 +250,11 @@ Pin placement is an essential part of floorplanning to minimize buffering and im
 
 To run floorplan in OpenLANE:
 
-  ![](/images/11.png)
+  ![](/images/Floorplan.png)
 
 As with all other stages, the floorplanning will be run according to configuration settings in the design specific config.tcl file. The output the the floorplanning phase is a DEF file which describes core area and placement of standard cell SITES:
 
-  ![](/images/12.png)
+  ![](/images/Floorplan_def.png)
 
 ### Viewing Floorplan in Magic
 To view our floorplan in Magic we need to provide three files as input:
@@ -265,7 +265,7 @@ To view our floorplan in Magic we need to provide three files as input:
 
   ![](/images/13.png)
     
-  ![](/images/14.png)
+  ![](/images/magic_2.png)
 
 
 ### Placement
@@ -277,17 +277,17 @@ The next step in the Digital ASIC design flow after floorplanning is placement. 
 
 To do placement in OpenLANE:
 
-  ![](/images/15.png)
+  ![](/images/placement_1.png)
 
 For placement to converge the overflow value needs to be converging to 0. At the end of placement cell legalization will be reported:
 
-  ![](/images/16.png)
+  ![](/images/placement_2.png)
 
 ### Viewing Placement in Magic
 
 To view placement in Magic the command mirrors viewing floorplanning:
 
-  ![](/images/17.png)
+  ![](/images/placement_4.png)
   
   ![](/images/18.png)
 
@@ -518,7 +518,7 @@ Place and routing (PnR) is performed using an abstract view of the GDS files gen
   - Technology LEF - Contains layer information, via information, and restricted DRC rules
   - Cell LEF - Abstract information of standard cells
 
-![](/images/33.png)
+![](/images/lef_file.png)
 
 Tracks are used during the routing stage, routes can go over the tracks, or metal traces can go over the tracks. What the file is saying is that for the li1 layer the x or horizontal track is at an offset of 0.23 and a pitch of 0.46. The offset is the distance from the origin to the routing track in either the x or y direction. It is half the pitch so that means the tracks are centered around the origin. 
 
@@ -690,7 +690,7 @@ After routing has been completed interconnect parasitics can be extracted to per
 <!-- CONTACT -->
 ## Contact
 
-Grant Brown - u1249940@umail.utah.edu
+Tunir Bagui tunir.bagui2014@gmail.com
 
 
 
@@ -698,4 +698,4 @@ Grant Brown - u1249940@umail.utah.edu
 ## Acknowledgements
 * [Nickson Jose - VSD VLSI Engineer](https://github.com/nickson-jose)
 * [Kunal Ghosh - Co-founder (VSD Corp. Pvt. Ltd)](https://github.com/kunalg123)
-
+* Praharsha
