@@ -159,7 +159,7 @@ OpenLANE flow consists of several stages. By default, all flow steps are run in 
 
 ### Invoking OpenLane
 
-![](/images/invoke_openlane.png)
+![](/images/invoke_openlane.PNG)
 
   - ./flow.tcl is the script which runs the OpenLANE flow
   - OpenLANE can be run interactively or in autonomous mode 
@@ -168,7 +168,7 @@ OpenLANE flow consists of several stages. By default, all flow steps are run in 
 ### Package Importing
 Different software dependencies are needed to run OpenLANE. To import these into the OpenLANE tool we need to run:
 
-![](/images/package_require.png)
+![](/images/package_require.PNG)
 
 ### Design Folder
 All designs run within OpenLANE are extracted from the openlane/designs folder:
@@ -185,7 +185,7 @@ Each design hierarchy comes with two distinct components:
 
 An example of a configuration file is given:
 
-  ![](/images/Config_tcl.png)
+  ![](/images/Config_tcl.PNG)
 
 ### Prepare Design
 Prep is used to make file structure for our design. To set this up do:
@@ -206,7 +206,7 @@ In addition, preparing the design in OpenLANE merges the technology LEF and cell
 
 To run synthesis:
 
-  ![](/images/synthesis.png)
+  ![](/images/synthesis.PNG)
 
 Note: Ensure the WNS is an acceptable number, if not please adjust the clock period to fix STA errors.
 
@@ -247,11 +247,11 @@ Pin placement is an essential part of floorplanning to minimize buffering and im
 
 To run floorplan in OpenLANE:
 
-  ![](/images/Floorplan.png)
+  ![](/images/Floorplan.PNG)
 
 As with all other stages, the floorplanning will be run according to configuration settings in the design specific config.tcl file. The output the the floorplanning phase is a DEF file which describes core area and placement of standard cell SITES:
 
-  ![](/images/Floorplan_def.png)
+  ![](/images/Floorplan_def.PNG)
 
 ### Viewing Floorplan in Magic
 To view our floorplan in Magic we need to provide three files as input:
@@ -262,7 +262,7 @@ To view our floorplan in Magic we need to provide three files as input:
 
   ![](/images/13.png)
     
-  ![](/images/magic_2.png)
+  ![](/images/magic_2.PNG)
 
 
 ### Placement
@@ -515,7 +515,7 @@ Place and routing (PnR) is performed using an abstract view of the GDS files gen
   - Technology LEF - Contains layer information, via information, and restricted DRC rules
   - Cell LEF - Abstract information of standard cells
 
-![](/images/lef_file.png)
+![](/images/lef_file.PNG)
 
 Tracks are used during the routing stage, routes can go over the tracks, or metal traces can go over the tracks. What the file is saying is that for the li1 layer the x or horizontal track is at an offset of 0.23 and a pitch of 0.46. The offset is the distance from the origin to the routing track in either the x or y direction. It is half the pitch so that means the tracks are centered around the origin. 
 
@@ -659,7 +659,7 @@ The PDN feature within OpenLANE will create:
   3. Power straps to bring power into the center of the chip
   4. Power rails for the standard cells
   
-  ![](/images/power_grid_network.png)
+  ![](/images/power_grid_network.PNG)
 
 Note: The pitch of the metal 1 power rails defines the height of the standard cells
 
