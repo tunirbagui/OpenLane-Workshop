@@ -274,17 +274,17 @@ The next step in the Digital ASIC design flow after floorplanning is placement. 
 
 To do placement in OpenLANE:
 
-  ![](/images/placement_1.png)
+  ![](/images/placement_1.PNG)
 
 For placement to converge the overflow value needs to be converging to 0. At the end of placement cell legalization will be reported:
 
-  ![](/images/placement_2.png)
+  ![](/images/placement_2.PNG)
 
 ### Viewing Placement in Magic
 
 To view placement in Magic the command mirrors viewing floorplanning:
 
-  ![](/images/placement_4.png)
+  ![](/images/placement_4.PNG)
   
   ![](/images/18.png)
 
