@@ -12,9 +12,6 @@
 
 
 <!-- TABLE OF CONTENTS -->
-## Table of Contents
-
-- [About The Project](#about-the-project)
 
 
 
@@ -662,7 +659,7 @@ The PDN feature within OpenLANE will create:
   3. Power straps to bring power into the center of the chip
   4. Power rails for the standard cells
   
-  ![](/images/54.png)
+  ![](/images/power_grid_network.png)
 
 Note: The pitch of the metal 1 power rails defines the height of the standard cells
 
